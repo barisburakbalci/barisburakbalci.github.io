@@ -19,7 +19,8 @@ class SnakeGame {
     // Oyun döngümüz çalışmaya başlıyor.
     // Her saniyede 15 kez çalışacak, yani 15 FPS olacak.
     // Üç boyutlu çok daha büyük oyunlar genelde 60 FPS üzerinde çalışıyor.
-    this.timer = setInterval(this.loop.bind(this), 1000 / 7);
+    //this.timer = setInterval(this.loop.bind(this), 1000 / 7);
+    this.timer = setInterval(() => this.loop(), 1000 / 7);
   }
 
   reset() {
